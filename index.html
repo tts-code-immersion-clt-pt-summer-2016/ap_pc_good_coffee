@@ -7,6 +7,7 @@
     <title>Good Coffee</title>
     <!-- font family below -->
   <link href="http://fonts.googleapis.com/css?family=Muli|Raleway:400,500,700|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
 
@@ -30,7 +31,17 @@
         <li><a href="#">Mission</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Fair Trade</a></li>
+        <li><a href="#" data-toggle="modal" data-target="videoModal">Fair Trade</a>
+          <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <iframe width="100%" height="350" src="http://www.youtube.com/embed/7K4G5-ydhS0"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Coffee Gear<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -47,10 +58,10 @@
 </nav>
 
     <div class="jumbotron">
-      <h1>Good Coffee Co.
+      <h1 class="animated fadeInDown">Good Coffee Co.
       </h1>
     </div>
-    <div class="mission container-fluid">
+<div class="mission container-fluid">
   <div class="row">
     <a name="mission"></a>
     <h3> Here at Good Coffee Co we are passionate about serving the best coffee you'll ever taste.
@@ -59,17 +70,23 @@
     </h3>
   </div>
 </div>
-    <div class="features">
-      <p>
-      The freshest locally sourced coffee. Organic and Fair Trade certified.
-      </p>
-      <p>
-      A perfect environment to meet with a friend or be alone and get work done.
-      </p>
-      <p>
-      Quality hand-crafted espresso shots pulled with the greatest of care.
-      </p>
+
+  <div class="container features">
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="img-responsive" src="images/Roasted_Coffee_Beans_Texture.jpg" />
+        <p>The freshest locally sourced coffee. Organic and Fair Trade certified.</p>
+      </div>
+      <div class="col-sm-4">
+        <img class="img-responsive" src="images/coffee-shop-393954_640.jpg" />
+        <p>A perfect environment to meet with a friend or be alone and get work done.</p>
+      </div>
+      <div class="col-sm-4">
+        <img class="img-responsive" src="images/coffee-206142_640.jpg" />
+        <p>Quality hand-crafted espresso shots pulled with the greatest of care.</p>
+      </div>
     </div>
+  </div>
     <footer>
       <p>
         &#169; Good Coffee Co. 2015
